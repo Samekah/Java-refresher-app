@@ -2,7 +2,7 @@
  * MagicNumberFive
  */
 public class MagicNumberFive {
-    
+    //complete
     public void subMenu(){
             String response = " ";
             while(!(response.equals("Exit")) || !(response.equals("exit"))){
@@ -11,6 +11,8 @@ public class MagicNumberFive {
                 System.out.println("[1] run a demo, \n[2] Try Magic Number 5, \n[3] View program explination");
             }
     }
+
+    //add methos for hangling user input - input directory
 
     public void demo(){
         System.out.println("We will now run the demo. The number that we will use to demonstrate this program is 12!");
