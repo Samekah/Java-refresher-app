@@ -25,7 +25,7 @@ public class App {
             if(response.equals("Magic number 5") || response.equals("1")){
                 System.out.println("\nMagic Number 5 selected");
                 MagicNumberFive game = new MagicNumberFive();
-                game.subMenu();
+                game.subMenu(input);
                
             }
            else if(response.equals("Counting application") || response.equals("2")){

@@ -6,14 +6,14 @@
 
 public class MagicNumberFive {
     //complete
-    public void subMenu(){
+    public void subMenu(Scanner magicInput){
             String response = " ";
             int input = 0;
             // Scanner magicInput = new Scanner(System.in);
 
             System.out.println("Magic Number 5 is a program that will always output the number 5 no matter what number the user inputs!\n");
             while(true){
-                System.out.println("**********Main Menu**********\n-----------------------------\n\nWhat would you like to do?\n");
+                System.out.println("*****************************\nMain Menu\n-----------------------------\n\nWhat would you like to do?\n");
                 System.out.println("[1] Run a demo, \n[2] Play Magic Number 5, \n[3] View step through explanation, \n-> Exit");
                 
                 if(magicInput.hasNext()){
@@ -41,7 +41,7 @@ public class MagicNumberFive {
                     stepThrough();
                 }
                 else if(response.equals("Exit") || response.equals("exit")){
-                    System.out.println("\nReturning to main menu\n\n");
+                    System.out.println("\n**********************\nReturning to main menu\n**********************\n\n");
                     break;
                 }
                 else{
@@ -55,7 +55,7 @@ public class MagicNumberFive {
         System.out.println("\nWe will now run the demo. The number that we will use to demonstrate this program is 12!");
         System.out.println("Once we enter the number 12, the program will run some calculations, as described above, and will only output the number 5.");
         //edit this
-        System.out.println(beginMagic(12));
+        System.out.printf("\nThe inputted number was %d and the outputted number is %d!\n\n",12,beginMagic(12));
     }
 
     public int beginMagic(int startnum){
