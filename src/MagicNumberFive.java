@@ -14,17 +14,25 @@ public class MagicNumberFive {
             System.out.println("Magic Number 5 is a program that will always output the number 5 no matter what number the user inputs!\n");
             while(true){
                 System.out.println("**********Main Menu**********\n-----------------------------\n\nWhat would you like to do?\n");
-                System.out.println("[1] Run a demo, \n[2] Play Magic Number 5, \n[3] View step through explanation, \n[4] Exit");
+                System.out.println("[1] Run a demo, \n[2] Play Magic Number 5, \n[3] View step through explanation, \n-> Exit");
 
-                response = magicInput.nextLine();
+                if(magicInput.hasNextLine()){
+                    response = magicInput.nextLine();
+                }
+                else{
+                    System.err.println("here");
+                }
+                
+
                 if(response.equals("Run a demo") || response.equals("1")){
                     demo();
                 }
                 else if(response.equals("Play Magic Number 5") || response.equals("2")){
                     //add loop to make sure input is an integer
                     System.out.println("Please enter a number and watch the magic!");
-                    input = magicInput.nextInt();
-                    System.out.printf("\nThe inputted number was %d and the outputted number is %d!\n", input, beginMagic(input));
+                    // input = magicInput.nextInt();
+                    input = 5;
+                    System.out.printf("\nThe inputted number was %d and the outputted number is %d!\n\n", input, beginMagic(input));
                     
                 }
                 else if(response.equals("View step through explanation") || response.equals("3")){
