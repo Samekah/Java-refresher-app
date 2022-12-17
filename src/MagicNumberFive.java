@@ -4,16 +4,16 @@
 
  import java.util.Scanner;
 
-public class MagicNumberFive {
-    //complete
+public class MagicNumberFive implements Applications{
+    
     public void subMenu(Scanner magicInput){
             String response = " ";
             int input = 0;
             // Scanner magicInput = new Scanner(System.in);
 
-            System.out.println("Magic Number 5 is a program that will always output the number 5 no matter what number the user inputs!\n");
+            System.out.println("Magic Number 5 is a program that will always output the number 5 no matter what whole number the user inputs!\n");
             while(true){
-                System.out.println("*****************************\nMain Menu\n-----------------------------\n\nWhat would you like to do?\n");
+                System.out.println("**********************\n         Menu\n**********************\n\nWhat would you like to do?\n");
                 System.out.println("[1] Run a demo, \n[2] Play Magic Number 5, \n[3] View step through explanation, \n-> Exit");
                 
                 if(magicInput.hasNext()){
@@ -34,7 +34,7 @@ public class MagicNumberFive {
                         System.out.println("\nUnfortunately, the inputted value was not a whole number, so the defauly value of 0 will be used.");
                         input = 0;
                     }
-                    System.out.printf("\nThe inputted number was %d and the outputted number is %d!\n\n",input,beginMagic(input));
+                    System.out.printf("\nThe inputted number was %d and the outputted number is %d!\n\n",input,startMagic(input));
                     
                 }
                 else if(response.equals("View step through explanation") || response.equals("3")){
@@ -55,10 +55,10 @@ public class MagicNumberFive {
         System.out.println("\nWe will now run the demo. The number that we will use to demonstrate this program is 12!");
         System.out.println("Once we enter the number 12, the program will run some calculations, as described above, and will only output the number 5.");
         //edit this
-        System.out.printf("\nThe inputted number was %d and the outputted number is %d!\n\n",12,beginMagic(12));
+        System.out.printf("\nThe inputted number was %d and the outputted number is %d!\n\n",12,startMagic(12));
     }
 
-    public int beginMagic(int startnum){
+    public int startMagic(int startnum){
         return ((((startnum + 3)*2)-4) - (startnum * 2) + 3);
     }
 
@@ -69,4 +69,5 @@ public class MagicNumberFive {
         System.out.println("\nSo if our number was 8, we would do:\n");
         System.out.println("[1] 8 + 3 = 11 \n[2] 11 * 2 = 22 \n[3] 22 - 4 = 18 \n[4] 18 - (2 * 8) = 2 \n[5] 2 + 3 = 5\n");
     }
+
 }

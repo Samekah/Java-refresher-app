@@ -16,7 +16,7 @@ public class App {
 
         while(true){
             System.out.println("Hello, welcome to my Java refresher app! \nThis code will allow a user to run 5 basic apps, these being:");
-            System.out.println("\n[1] Magic number 5, \n[2] Counting application, \n[3] Cm to Ft and inches, \n[4] Fibonacci sequence, \n[5] Cylinder volume calculator \n-> Exit \n");
+            System.out.println("\n[1] Magic number 5, \n[2] FizzBuzz, \n[3] Cm to Ft and inches, \n[4] Fibonacci sequence, \n[5] Cylinder volume calculator \n-> Exit \n");
             System.out.println("Each program will have their own instructions on how they can be used and an explination of what they can do!");
             System.out.println("Please select an option to run, either by name or number");
 
@@ -28,8 +28,8 @@ public class App {
                 game.subMenu(input);
                
             }
-           else if(response.equals("Counting application") || response.equals("2")){
-                System.out.println("\nCounting application selected");
+           else if(response.equals("FizzBuzz") || response.equals("2")){
+                System.out.println("\nFizzBuzz selected");
 
             }    
            else if(response.equals("Cm to Ft and inches") || response.equals("3")){
@@ -52,13 +52,5 @@ public class App {
             }
        }
        
-        
-        //select option
-        //give explination
-        //play demo
-        //ask if user would like to select another option or use proogram - if yes run sub menu, if no back to main menu
-
-
-
     }
 }
