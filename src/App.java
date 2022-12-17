@@ -1,7 +1,5 @@
 import java.util.Scanner;
 
-import javax.xml.ws.Response;
-
 public class App {
     /* This code will allow a user to run 4 basic apps, these being
      *  [1] Magic number 5
