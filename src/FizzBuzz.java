@@ -62,13 +62,33 @@ public class FizzBuzz implements Applications {
     }
 
     public void fizzBuzz(int sequence){
-        System.out.println("will do tomorrow");
+        for(int x = 1; x <= sequence; x++){
+            if (x % 3 == 0) {
+                System.out.print("Fizz, ");
+            } 
+            else if (x % 5 == 0){
+                System.out.print("Buzz, ");
+            }
+            else if ((x % 3 == 0) && (x % 5 == 0)){
+                System.out.print("FizzBuzz, ");
+            }
+            else{
+                System.out.printf("%d, ",x);
+            }
+        }
+        System.out.println("\n");
     }
 
     @Override
     public void stepThrough() {
-        System.out.println("will do tomorrow");
-        
+        System.out.println("\nwelcome to the step through, here we will explain line by line how FizzBuzz works!");
+        System.out.println("First we have the user submit a value, we'll call this x. We then use x to create a range that we want to loop through, this being 1 to x");
+        System.out.println("On each value of x we check 3 cases:\n");
+        System.out.println("[1] Is the number divisible by 3, \n[2] Is the number divisible by 5, \n[3] Is the number divisible by 3 and 5\n");
+        System.out.println("If x % 3 = 0, then the number is divisible by 3 and will be replaced by \"Fizz\"");
+        System.out.println("If x % 3 = 0, then the number is divisible by 3 and will be replaced by \"Fizz\"");
+        System.out.println("If divisible by both 3 and 5, x will be replaced by \"FizzBuzz\" \nIf it doesnt meet these cases, then x will be printed as is - providing the following sequence if x = 15\n ");
+        System.out.println("1, 2, Fizz, 4, Buzz, Fizz, 7, 8, Fizz, Buzz, 11, Fizz, 13, 14, FizzBuzz\n");        
     }
     
 }
