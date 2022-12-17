@@ -54,7 +54,6 @@ public class MagicNumberFive implements Applications{
     public void demo(){
         System.out.println("\nWe will now run the demo. The number that we will use to demonstrate this program is 12!");
         System.out.println("Once we enter the number 12, the program will run some calculations, as described above, and will only output the number 5.");
-        //edit this
         System.out.printf("\nThe inputted number was %d and the outputted number is %d!\n\n",12,startMagic(12));
     }
 

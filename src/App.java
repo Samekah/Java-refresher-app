@@ -30,7 +30,8 @@ public class App {
             }
            else if(response.equals("FizzBuzz") || response.equals("2")){
                 System.out.println("\nFizzBuzz selected");
-
+                FizzBuzz fizzBuzz = new FizzBuzz();
+                fizzBuzz.subMenu(input);
             }    
            else if(response.equals("Cm to Ft and inches") || response.equals("3")){
                 System.out.println("\nCm to Ft and inches conversion selected");
