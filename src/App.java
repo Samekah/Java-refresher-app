@@ -33,13 +33,18 @@ public class App {
             }    
            else if(response.equals("Cm to Ft and inches") || response.equals("3")){
                 System.out.println("\nCm to Ft and inches conversion selected");
-         
+                CmConversion cmToFeet = new CmConversion();
+                cmToFeet.subMenu(input);
             }
             else if(response.equals("Fibonacci sequence") || response.equals("4")){
                 System.out.println("\nFibonacci sequence selected");
+                Fibonacci fibonacci = new Fibonacci();
+                fibonacci.subMenu(input);
             }
             else if(response.equals("Cylinder volume calculator") || response.equals("5")){
                 System.out.println("\nCylinder volume calculator selected");
+                VolumeCalculator cylinderVolume = new VolumeCalculator();
+                cylinderVolume.subMenu(input);
             }
             else if(response.equals("Exit") || response.equals("exit")){
                 System.out.println("\nThank you for using this appication!");
