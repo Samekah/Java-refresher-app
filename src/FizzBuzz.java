@@ -46,7 +46,6 @@ public class FizzBuzz implements Applications {
             else{
                 System.out.printf("\n\nUnfortunately, %s is not a valid option!\n\n", response);
             }
-
         }
         
     }
