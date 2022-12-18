@@ -6,18 +6,18 @@
 
 public class MagicNumberFive implements Applications{
     
-    public void subMenu(Scanner magicInput){
+    public void subMenu(Scanner userInput){
             String response = " ";
             int input = 0;
-            // Scanner magicInput = new Scanner(System.in);
+            // Scanner userInput = new Scanner(System.in);
 
             System.out.println("Magic Number 5 is a program that will always output the number 5 no matter what whole number the user inputs!\n");
             while(true){
                 System.out.println("**********************\n         Menu\n**********************\n\nWhat would you like to do?\n");
                 System.out.println("[1] Run a demo, \n[2] Play Magic Number 5, \n[3] View step through explanation, \n-> Exit");
                 
-                if(magicInput.hasNext()){
-                    response = magicInput.nextLine();
+                if(userInput.hasNext()){
+                    response = userInput.nextLine();
                 }                
 
                 if(response.equals("Run a demo") || response.equals("1")){
@@ -28,7 +28,7 @@ public class MagicNumberFive implements Applications{
                     System.out.println("Please enter a number and watch the magic!");
 
                     try{
-                        input = Integer.valueOf(magicInput.nextLine());
+                        input = Integer.valueOf(userInput.nextLine());
                     }
                     catch(Exception e){
                         System.out.println("\nUnfortunately, the inputted value was not a whole number, so the defauly value of 0 will be used.");

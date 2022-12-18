@@ -3,18 +3,18 @@ import java.util.Scanner;
 public class FizzBuzz implements Applications {
 
     @Override
-    public void subMenu(Scanner magicInput) {
+    public void subMenu(Scanner userInput) {
         String response = " ";
         int input = 0;
-        // Scanner magicInput = new Scanner(System.in);
+        // Scanner userInput = new Scanner(System.in);
 
         System.out.println("FizzBuzz is a program that will output fizz, buzz or fizzbuzz if the number is divisible by either or both 3 and 5\n");
         while(true){
             System.out.println("**********************\n         Menu\n**********************\n\nWhat would you like to do?\n");
             System.out.println("[1] Run a demo, \n[2] Play FizzBuzz, \n[3] View step through explanation, \n-> Exit");
             
-            if(magicInput.hasNext()){
-                response = magicInput.nextLine();
+            if(userInput.hasNext()){
+                response = userInput.nextLine();
             }                
 
             if(response.equals("Run a demo") || response.equals("1")){
@@ -25,7 +25,7 @@ public class FizzBuzz implements Applications {
                 System.out.println("Please enter the length of our FizzBuzz sequence");
 
                 try{
-                    input = Integer.valueOf(magicInput.nextLine());
+                    input = Integer.valueOf(userInput.nextLine());
                 }
                 catch(Exception e){
                     System.out.println("\nUnfortunately, the inputted value was not a whole number, so the defauly value of 15 will be used.");
