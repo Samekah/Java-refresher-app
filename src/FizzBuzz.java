@@ -54,7 +54,7 @@ public class FizzBuzz implements Applications {
     public void demo() {
         System.out.println("\nWe will now run the demo. The number that we will use to demonstrate this program is 30, this will be the length of our sequence!");
         System.out.println("Once we enter the number 30, the program will start at 1 and loop through the numbers until 30, using logic to replace numbers that meet the following criteria.");
-        System.out.println("[1] If number is divisible by 3 - replace with \"Fizz\", \n[2] If number is divisible by 5 - replace with \"Buzz\", \n[3] If number is divisible by 3 and 5 - replace with \"FizzBuzz\"\n [4] If none of these criteria is met do nothing");
+        System.out.println("[1] If number is divisible by 3 - replace with \"Fizz\", \n[2] If number is divisible by 5 - replace with \"Buzz\", \n[3] If number is divisible by 3 and 5 - replace with \"FizzBuzz\" \n[4] If none of these criteria is met do nothing");
         System.out.printf("\nThe inputted length was %d and the outputted sequence is:\n",30);
         fizzBuzz(30);
         
