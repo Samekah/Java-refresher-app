@@ -57,7 +57,7 @@ public class VolumeCalculator implements Applications{
         System.out.println("\nWe will now run the demo. The numbers that we will use to demonstrate this program are 5 for the radius and 15 for the height!");
         System.out.println("Once we enter the radius x and the height y, the program the following calculation.");
         System.out.println("\n PI(r*r)h");
-        System.out.printf("\nSo with an inputted radius of %d and a height of %d the outputted volume will be\n\n",5,15,calculateVolume(5, 15));       
+        System.out.printf("\nSo with an inputted radius of %d and a height of %d the outputted volume will be %.2f\n\n",5,15,calculateVolume(5, 15));       
     }
 
     public double calculateVolume(double radius, double height){

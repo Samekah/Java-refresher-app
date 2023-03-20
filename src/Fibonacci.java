@@ -1,3 +1,4 @@
+import java.math.BigInteger;
 import java.util.Scanner;
 
 public class Fibonacci implements Applications {
@@ -60,14 +61,15 @@ public class Fibonacci implements Applications {
         
     }
 
-    public void fibonacci(int sequence){
-        int firstTerm = 1, secondTerm = 1, nextTerm = 0; 
+    public void fibonacci(long sequence){
+        long firstTerm = 1, secondTerm = 1, nextTerm = 0; 
         for(int x = 1; x <= sequence; x++){
-            System.out.printf("%d, ",firstTerm);
+            System.out.printf("%d, ", BigInteger.valueOf(firstTerm));
             
             nextTerm = firstTerm + secondTerm;
             firstTerm = secondTerm;
-            secondTerm = nextTerm;           
+            secondTerm = nextTerm; 
+            
         }
         System.out.println("\n");
     }

@@ -62,14 +62,14 @@ public class FizzBuzz implements Applications {
 
     public void fizzBuzz(int sequence){
         for(int x = 1; x <= sequence; x++){
-            if (x % 3 == 0) {
-                System.out.print("Fizz, ");
+            if ((x % 3 == 0) && (x % 5 == 0)) {
+                System.out.print("FizzBuzz, ");
             } 
             else if (x % 5 == 0){
                 System.out.print("Buzz, ");
             }
-            else if ((x % 3 == 0) && (x % 5 == 0)){
-                System.out.print("FizzBuzz, ");
+            else if (x % 3 == 0){
+                System.out.print("Fizz, ");
             }
             else{
                 System.out.printf("%d, ",x);
@@ -85,7 +85,7 @@ public class FizzBuzz implements Applications {
         System.out.println("On each value of x we check 3 cases:\n");
         System.out.println("[1] Is the number divisible by 3, \n[2] Is the number divisible by 5, \n[3] Is the number divisible by 3 and 5\n");
         System.out.println("If x % 3 = 0, then the number is divisible by 3 and will be replaced by \"Fizz\"");
-        System.out.println("If x % 3 = 0, then the number is divisible by 3 and will be replaced by \"Fizz\"");
+        System.out.println("If x % 5 = 0, then the number is divisible by 3 and will be replaced by \"Fizz\"");
         System.out.println("If divisible by both 3 and 5, x will be replaced by \"FizzBuzz\" \nIf it doesnt meet these cases, then x will be printed as is - providing the following sequence if x = 15\n ");
         System.out.println("1, 2, Fizz, 4, Buzz, Fizz, 7, 8, Fizz, Buzz, 11, Fizz, 13, 14, FizzBuzz\n");        
     }
